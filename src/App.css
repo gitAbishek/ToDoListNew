@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%
+}
+
+.todo{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  background: rgb(49, 1, 1);
+}
+
+.container{
+  width:20%;
+  height:25rem;
+  margin-top: 15rem;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.3rem;
+}
+
+.container .title{
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(211, 211, 229);
+  padding: 2rem 0rem;
+}
+
+.container .title span{
+  color:yellow;
+}
+
+
+/*   BOX 1 (ONE) */
+
+.container .box1{
+  display:flex;
+  border-radius: 0.2rem;
+  background-color: #eee;
+  margin-bottom: 2rem;
+  width:26rem;
+}
+
+.container .box1 .emoji {
+  color:yellow;
+  font-size: 2rem;
+  padding-top:0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+}
+
+.container .box1 input{
+  padding: 0.5rem;
+  width: 20rem;
+  border: none;
+  border-color: white;
+  background-color: #eee;
+}
+
+.no-outline:focus{
+  outline:none;
+}
+
+.container .box1 .plusicon{
+  font-size: 2.5rem;
+  padding-top: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .btn2 button{
+  border: none;
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+  color:rgb(118, 118, 174);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.container .btn2 button:hover{
+  background-color: blue;
+  color:pink;
+}
+
+/*   BOX 2 (ONE) */
+
+.container .box2{
+  margin: 0.5rem;
+  display:flex;
+  border-radius: 0.2rem;
+  background-color: blue;
+  margin-bottom: 1rem;
+  width:26rem;
+}
+
+.container .box2 .textitem{
+  color:white;
+  font-size: 1.4rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+}
+
+.container .box2 input{
+  padding: 0.5rem;
+  width: 20rem;
+  border: none;
+  border-color: white;
+  background-color: blue;
+}
+
+.no-outline:focus{
+  outline:none;
+}
+
+.container .box2 .plusicon{
+  font-size: 2rem;
+  padding-top: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+  color:white;
+}
+
+.container .box2 .pencilicon{
+  font-size: 2rem;
+  padding-top: 0.3rem;
+  padding-right: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
