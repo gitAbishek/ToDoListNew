@@ -93,11 +93,17 @@ html{
 
 .container .box2{
   margin: 0.5rem;
-  display:flex;
+  display:grid;
   border-radius: 0.2rem;
   background-color: blue;
   margin-bottom: 1rem;
   width:26rem;
+  padding: 0.5rem;
+  border: none;
+  border-color: white;
+  background-color: blue;
+  grid-template-columns: 80% 10%;
+  
 }
 
 .container .box2 .textitem{
@@ -106,15 +112,14 @@ html{
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   padding-left: 1rem;
+  width:80%;
 }
 
-.container .box2 input{
-  padding: 0.5rem;
-  width: 20rem;
-  border: none;
-  border-color: white;
-  background-color: blue;
+.container .box2 .box2_icon{
+  display: flex;
 }
+
+
 
 .no-outline:focus{
   outline:none;

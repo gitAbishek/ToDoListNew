@@ -23,7 +23,22 @@ const ToDo = () => {
     const InputValue = () => {
         if (!InputData) {
             alert("plzz fill the value")
-        } else {
+        }else if(InputData && toggleButton){
+            setItems(
+                items.map((curElem)=>{
+                    if(curElem.id===isEditedItem){
+                        return {...curElem, name:InputData}
+                    }
+
+                    return curElem
+                })
+            )
+
+        setInputData("");
+        setIsEditedItem(null)  
+        setToggleButton(false)
+        }
+        else {
             const myNewInputData = {
                 id: new Date().getTime().toString(),
                 name: InputData
@@ -95,15 +110,14 @@ const ToDo = () => {
                             <>
                                 <div className="box2">
                                     <p className="textitem" key={curElem.id}>{curElem.name}</p>
-                                    <input type="text"
-                                        className="no-outline"
-                                    />
+                                    <div className="box2_icon">
                                     <p className="pencilicon"
                                     onClick={()=> editItem(curElem.id)}
                                     ><BsPencilSquare /></p>
                                     <p className="plusicon"
                                     onClick={() => DeleteItems(curElem.id)}
                                     ><MdDelete /></p>
+                                    </div>
                                 </div>
                             </>
                         )
